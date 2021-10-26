@@ -17,6 +17,7 @@ According to the minihack docs, "MiniHack is an environment creation framework a
 The game that we are required to train our agent to learn is the MiniHack-Quest-Hard-v0. This game involves multiple sub tasks in order to reach the goal including navigation through a maze, picking up objects of interest that are needed at later stages, crossing a lava river with one of the objects that were picked up before as well as killing a monster with the wand of death that would also need to be picked up in the environment prior to using the wand.
 
 The two algorithms that we made use of is :
-<ins>## Valued Based Method</ins>
+## Valued Based Method
 * Deep Q learning network or DQN for short
+## Policy Gradient Method
 * Actor Critic or AC for short

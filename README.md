@@ -19,6 +19,26 @@ The game that we are required to train our agent to learn is the MiniHack-Quest-
 The two algorithms that we made use of:
 ## Valued Based Method
 * Deep Q learning network or DQN for short
+
+The environment can be treated exactly like a normal gym environment after running the following commands in the order that they appear
+* !sudo apt-get install -y build-essential autoconf libtool pkg-config \
+    python3-dev python3-pip python3-numpy git libncurses5-dev \
+    libzmq3-dev flex bison
+* !git clone https://github.com/google/flatbuffers.git
+* !cd flatbuffers && cmake -G "Unix Makefiles" && make && sudo make install
+* !pip install cmake==3.15.3
+* !pip install nle==0.5.2
+* !pip install "nle[agent]"
+
+The exclamation marks before the command are needed for running these installs in the notebook that is being used for the project
+
+There is only a single dqn notebook. This notebook can be used to run all 3 of the different agents. In order to train a model 
+two models need to be initialised like in the get_avg_reward_for_multiple_runs() method, then these two models can be passed 
+to the learn_model() method in order to learn them. In order to learn the movements only model, the first model passed to the 
+learn_model() method must only contain 4 output neurons. In order to learn the limited actionspace model, the first model passed to the 
+learn_model() method must contain 18 output neurons. In order to learn the random model, the variable RANDOM_AGENT(it's just 
+above the learn_model method) must be set to True.
+
 ## Policy Gradient Method
 * Actor Critic or AC for short
 

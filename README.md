@@ -32,6 +32,7 @@ The environment can be treated exactly like a normal gym environment after runni
 
 The exclamation marks before the command are needed for running these installs in the notebook that is being used for the project
 
+**NOTE**
 There is only a single dqn notebook. This notebook can be used to run all 3 of the different agents. In order to train a model 
 two models need to be initialised like in the get_avg_reward_for_multiple_runs() method, then these two models can be passed 
 to the learn_model() method in order to learn them. In order to learn the movements only model, the first model passed to the 

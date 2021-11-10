@@ -2,7 +2,7 @@
 
 ## Authors
 * Michael Gomes
-* Tristen Le Forestier
+* Tristan Le Forestier
 * Jesse Bristow
 * Goolam Fareed Bangie
 
